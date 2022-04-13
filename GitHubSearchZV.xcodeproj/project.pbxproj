@@ -25,7 +25,7 @@
 		91AE1CC52806C9590090CE82 /* RepositoryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 91AE1CC42806C9590090CE82 /* RepositoryResponse.json */; };
 		91AE1CCB2806EC9E0090CE82 /* RepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE1CCA2806EC9E0090CE82 /* RepositoryViewModelTests.swift */; };
 		91AE1CCE2807005D0090CE82 /* RepositoryListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE1CCD2807005D0090CE82 /* RepositoryListViewModelTests.swift */; };
-		91AE1CD42807242D0090CE82 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 91AE1CD32807242D0090CE82 /* Mocker */; };
+		91AE1CDA280742940090CE82 /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = 91AE1CD9280742940090CE82 /* Mocker */; };
 		91F183762804D6F3008A9791 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F183752804D6F3008A9791 /* Repository.swift */; };
 		91F18378280552D4008A9791 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F18377280552D4008A9791 /* RepositoryViewModel.swift */; };
 		91F1837A280552E8008A9791 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F18379280552E8008A9791 /* RepositoryListViewModel.swift */; };
@@ -77,6 +77,7 @@
 			files = (
 				91AE1CB5280611B60090CE82 /* Kingfisher in Frameworks */,
 				912A29A02804C2B1004DCDF9 /* Alamofire in Frameworks */,
+				91AE1CDA280742940090CE82 /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AE1CD42807242D0090CE82 /* Mocker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +252,7 @@
 			packageProductDependencies = (
 				912A299F2804C2B1004DCDF9 /* Alamofire */,
 				91AE1CB4280611B60090CE82 /* Kingfisher */,
+				91AE1CD9280742940090CE82 /* Mocker */,
 			);
 			productName = GitHubSearchZV;
 			productReference = 912A29852804C1CC004DCDF9 /* GitHubSearchZV.app */;
@@ -272,7 +273,6 @@
 			);
 			name = GitHubSearchZVTests;
 			packageProductDependencies = (
-				91AE1CD32807242D0090CE82 /* Mocker */,
 			);
 			productName = GitHubSearchZVTests;
 			productReference = 912A29A82804C39C004DCDF9 /* GitHubSearchZVTests.xctest */;
@@ -310,7 +310,7 @@
 			packageReferences = (
 				912A299E2804C2B1004DCDF9 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				91AE1CB3280611B50090CE82 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				91AE1CD22807242D0090CE82 /* XCRemoteSwiftPackageReference "Mocker" */,
+				91AE1CD8280742940090CE82 /* XCRemoteSwiftPackageReference "Mocker" */,
 			);
 			productRefGroup = 912A29862804C1CC004DCDF9 /* Products */;
 			projectDirPath = "";
@@ -527,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HLGY9529T6;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubSearchZV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -555,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HLGY9529T6;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GitHubSearchZV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -675,7 +677,7 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		91AE1CD22807242D0090CE82 /* XCRemoteSwiftPackageReference "Mocker" */ = {
+		91AE1CD8280742940090CE82 /* XCRemoteSwiftPackageReference "Mocker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WeTransfer/Mocker.git";
 			requirement = {
@@ -696,9 +698,9 @@
 			package = 91AE1CB3280611B50090CE82 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
-		91AE1CD32807242D0090CE82 /* Mocker */ = {
+		91AE1CD9280742940090CE82 /* Mocker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 91AE1CD22807242D0090CE82 /* XCRemoteSwiftPackageReference "Mocker" */;
+			package = 91AE1CD8280742940090CE82 /* XCRemoteSwiftPackageReference "Mocker" */;
 			productName = Mocker;
 		};
 /* End XCSwiftPackageProductDependency section */
